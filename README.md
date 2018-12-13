@@ -53,12 +53,6 @@ class App extends React.Component {
 }
 ```
 
-### Dense Styling
-
-To use the "dense" styling that matches the [Material Design Style Guide](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels), you can set the prop `dense` to `true`. By default, this prop is set to `false`.
-
-![demo dense](/demo-dense.gif)
-
 ## Props
 
 Below are the props you can pass to the React Component to customize the TextInput.
@@ -73,7 +67,10 @@ textColor | string | `#000` | This string represents the hex code, rgb, or rgba 
 textFocusColor | string | | This string represents the hex code, rgb, or rgba color of the text entered in the TextInput when it is active/focused on.
 textBlurColor | string | | This string represents the hex code, rgb, or rgba color of the text entered in the TextInput when it is inactive.
 borderColor | string | `#E0E0E0` | This string represents the hex code, rgb, or rgba color of the TextInput underline when it is inactive.
-dense | bool | `false` | If true, it will render the "dense" input field which is smaller in height and has smaller font sizes. You can view more [here](https://www.google.com/design/spec/components/text-fields.html#text-fields-labels).
+labelPosTop | number | `16` | Position of label in top position
+labelPosBottom | number | `37` | Position of label in bottom position
+labelFontTop | number | `12` | Label text size in top position
+labelFontBottom | number | `16` | Label text size in bottom position
 multiline | bool | `false` | If true, it will allow multiline text input
 height | number | `undefined` | A number representing the initial height of the textInput
 autoGrow | bool | `false` | If true enables autogrow of the textInput 
